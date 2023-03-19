@@ -10,10 +10,12 @@
 
 int main(void)
 {
+
 char string[] = "abcdefghijklmnopqrstuvwxyz";
+int size = strlen(string);
 int i = strlen(string) - 1;
 
-while (i < strlen(string) && i >= 0)
+while (i < size && i >= 0)
 {
 putchar(string[i]);
 i--;
