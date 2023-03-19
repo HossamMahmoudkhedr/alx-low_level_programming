@@ -9,15 +9,11 @@
 
 int main(void)
 {
-int n = 0123456789;
-int i = 0
+int i = 0;
 
-char str[10];
-
-sprintf(str, "%d", n);
-while (str[i] != '\0')
+while (i < 10)
 {
-putchar("%d", str[i]);
+putchar(i + '0');
 i++;
 }
 
