@@ -10,7 +10,7 @@ int main(void)
 {
 int i = 0;
 
-while (i <= 16)
+while (i < 16)
 {
 if (i < 10)
 {
