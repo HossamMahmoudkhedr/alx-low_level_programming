@@ -10,13 +10,13 @@
 int main(void)
 {
 int i = 0;
-char string[] = "abcdefghijklmnopqrstuvwxyz/n";
+char string[] = "abcdefghijklmnopqrstuvwxyz";
 
 while (string[i] != '\0')
 {
 putchar(string[i]);
 i++;
 }
-
+putchar('\n');
 return (0);
 }
