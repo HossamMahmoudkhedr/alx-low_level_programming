@@ -9,10 +9,13 @@
 
 int main(void)
 {
+int i = 0;
 char string[] = "abcdefghijklmnopqrstuvwxyz";
-for (int i = 0; string[i] != '\0'; i++)
+
+while (string[i] != '\0')
 {
 putchar(string[i]);
+i++;
 }
 
 return (0);
