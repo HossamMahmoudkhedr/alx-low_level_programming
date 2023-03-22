@@ -11,7 +11,7 @@ print_to_98(int n)
 {
 if (n < 98)
 {
-int i = 0;
+int i = n;
 while (i <= 98)
 {
 if(i == 98){
