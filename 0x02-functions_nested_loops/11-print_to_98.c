@@ -13,7 +13,7 @@ if (n < 98)
 for (int i = n; i <= 98;i++)
 {
 if(i == 98){
-printf("%d",i)
+printf("%d",i);
 }
 else
 {
@@ -27,7 +27,7 @@ for (int i = n; i >= 98;i--)
 {
 if (i == 98)
 {
-printf("%d", i)
+printf("%d", i);
 }
 else
 {
