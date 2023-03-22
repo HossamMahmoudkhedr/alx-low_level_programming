@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include "main.h"
-
+- std = c99
 /**
  * print_to_98 - prints all the numbers from n to 98
  *
  * @n: the end of the print loop
  * Return: void
  */
-void print_to_98(int n)
+void
+print_to_98(int n)
 {
 if (n < 98)
 {
