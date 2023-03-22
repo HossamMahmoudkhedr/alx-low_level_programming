@@ -29,13 +29,13 @@ else if (n > 98)
 int j = n;
 while (j >= 98)
 {
-if (i == 98)
+if (j == 98)
 {
-printf("%d", i);
+printf("%d", j);
 }
 else
 {
-printf("%d, ", i);
+printf("%d, ", j);
 }
 }
 j--;
