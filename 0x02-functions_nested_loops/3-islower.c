@@ -13,6 +13,7 @@ int _islower(int c)
 
 char letter = (char)c;
 
+
 if (isupper(letter))
 {
 
@@ -24,6 +25,11 @@ else
 
 return (1);
 
+}
+
+if (c <= 64)
+{
+return (0);
 }
 
 }
