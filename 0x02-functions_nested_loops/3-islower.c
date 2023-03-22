@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <ctype.h>
 
-/* betty style doc for function main goes there */
 /**
- * _islower function checks if the letter is uppercase or lowercase
- * if the letter is lowercase -> reutrns 1
- * if the letter is uppercase -> reutrns 0
- * 
+ * _islower - Checks for lowercase character
+ * @c: The character to be checked
+ *
+ * Return: 1 for lowercase character or 0 for anything else
  */
 int _islower(int c)
 {
