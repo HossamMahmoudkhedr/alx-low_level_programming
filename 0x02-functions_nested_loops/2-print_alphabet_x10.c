@@ -2,7 +2,7 @@
 #include <string.h>
 /* betty style doc for function main goes there */
 /**
- * print_alphabet - Prints the lowercase alphabet ten times (x10)
+ * print_alphabet_x10 - Prints the lowercase alphabet ten times (x10)
  *
  * Description: Prints the lowercase alphabet ten times using putchar
  * Return: void
