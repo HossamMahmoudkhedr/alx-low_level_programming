@@ -14,12 +14,13 @@ if (n < 98)
 int i = n;
 while (i <= 98)
 {
-if(i == 98){
-printf("%d",i);
+if (i == 98)
+{
+printf("%d", i);
 }
 else
 {
-printf("%d, ",i);
+printf("%d, ", i);
 }
 i++;
 }
