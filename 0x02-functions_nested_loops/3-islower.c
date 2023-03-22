@@ -11,25 +11,11 @@
 int _islower(int c)
 {
 
-char letter = (char)c;
-
-
-if (isupper(letter))
+if (c >= 97 && c <= 122)
 {
-
-return (0);
-
-}
-else
-{
-
 return (1);
-
 }
 
-if (c <= 64)
-{
 return (0);
-}
 
 }
