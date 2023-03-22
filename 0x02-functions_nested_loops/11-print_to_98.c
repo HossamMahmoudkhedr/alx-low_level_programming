@@ -11,7 +11,7 @@ print_to_98(int n)
 {
 if (n < 98)
 {
-int i =0;
+int i = 0;
 while (i <= 98)
 {
 if(i == 98){
@@ -37,11 +37,12 @@ else
 {
 printf("%d, ", j);
 }
-}
 j--;
+}
 }
 else
 {
 printf("%d", 98);
 }
+printf("\n");
 }
