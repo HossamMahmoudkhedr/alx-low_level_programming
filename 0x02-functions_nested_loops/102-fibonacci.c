@@ -7,27 +7,21 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
-int i = 0;
-int a = 0;
-int b = 1;
-int result = 0;
-while (i < 50)
+int prev1 = 1, prev2 = 2, next_fib;
+
+printf("%d, %d", prev1, prev2);
+
+for (int i = 0; i < 48; i++)
 {
-result = a + b;
-if (i == 49)
-{
-printf("%d", result);
+next_fib = prev1 + prev2;
+printf(", %d", next_fib);
+prev1 = prev2;
+prev2 = next_fib;
 }
-else
-{
-printf("%d, ", result);
-}
-a = b;
-b = result;
-i++;
-}
+
 printf("\n");
+
 return (0);
 }
