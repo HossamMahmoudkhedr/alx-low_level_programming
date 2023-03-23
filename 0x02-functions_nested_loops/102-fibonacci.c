@@ -14,7 +14,7 @@ int i = 3;
 
 printf("%d, %d", a, b);
 
-while (i < 46)
+while (i < 47)
 {
 int c = a + b;
 printf(", %d", c);
