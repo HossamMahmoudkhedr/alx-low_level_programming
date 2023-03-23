@@ -22,7 +22,7 @@ printf("%d", result);
 }
 else
 {
-printf("%d, ", result)
+printf("%d, ", result);
 }
 a = b;
 b = result;
