@@ -9,16 +9,18 @@
 
 int main()
 {
-int prev1 = 1, prev2 = 2, next_fib;
+int a = 1, b = 2;
+int i = 3;
 
-printf("%d, %d", prev1, prev2);
+printf("%d, %d", a, b);
 
-for (int i = 0; i < 48; i++)
+while (i < 48)
 {
-next_fib = prev1 + prev2;
-printf(", %d", next_fib);
-prev1 = prev2;
-prev2 = next_fib;
+int c = a + b;
+printf(", %d", c);
+a = b;
+b = c;
+i++;
 }
 
 printf("\n");
