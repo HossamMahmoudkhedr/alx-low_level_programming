@@ -16,7 +16,8 @@ if (b > max)
 max = b;
 }
 
-if (c > max){
+if (c > max)
+{
 max = c;
 }
 
