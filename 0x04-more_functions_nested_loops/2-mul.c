@@ -9,10 +9,10 @@
  * Return: the result of multiplication of the two integers
  */
 
-int mul(long long int a, long long int b)
+int mul(int a, int b)
 {
 
-long long int result;
+int result;
 result = a * b;
 return (result);
 
