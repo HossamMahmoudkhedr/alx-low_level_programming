@@ -7,14 +7,14 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 int a = 1, b = 2;
 int i = 3;
 
 printf("%d, %d", a, b);
 
-while (i < 48)
+while (i < 46)
 {
 int c = a + b;
 printf(", %d", c);
