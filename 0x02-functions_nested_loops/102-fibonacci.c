@@ -2,28 +2,32 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-int a = 1, b = 2;
-int i = 3;
-
-printf("%d, %d", a, b);
-
-while (i < 47)
+int i = 0;
+long int a = 0;
+long int b = 1;
+long int result = 0;
+while (i < 50)
 {
-int c = a + b;
-printf(", %d", c);
+result = a + b;
+if (i == 49)
+{
+printf("%ld", result);
+}
+else
+{
+printf("%ld, ", result);
+}
 a = b;
-b = c;
+b = result;
 i++;
 }
-
 printf("\n");
-
 return (0);
 }
