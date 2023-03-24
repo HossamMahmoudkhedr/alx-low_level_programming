@@ -19,18 +19,18 @@ i = size - 1 - c;
 j = c + 1;
 while (i > 0)
 {
-_putchar(' ');
+putchar(' ');
 i--;
 }
 while (j > 0)
 {
-_putchar('#');
+putchar('#');
 j--;
 }
-_putchar('\n');
+putchar('\n');
 c++;
 }
 
 if (size <= 0)
-_putchar('\n');
+putchar('\n');
 }
