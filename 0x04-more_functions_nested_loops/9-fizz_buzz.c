@@ -1,41 +1,32 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
- * main - return fizz or buzz if the number mod 3 or mod 5 equals 0
- *
- * Return: int
+ * main - main block, solve fizz buzz from numbers 1 to 100
+ * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
+ * Multiples of both 3 and 5 should print FizzBuzz.
+ * Return: 0
  */
-
 int main(void)
 {
 int i;
-i = 1;
 
-char status[9] = "";
+i = 1;
 while (i <= 100)
 {
-if (i % 3 == 0)
-{
-strcat(status, "Fizz");
-}
-
-if (i % 5 == 0)
-{
-strcat(status, "Bizz");
-}
-
-if (status[0] != '\0')
-{
-printf("%s ", status);
-}
+if (i % 3 == 0 && i % 5 == 0)
+printf("FizzBuzz");
+else if (i % 3 == 0)
+printf("Fizz");
+else if (i % 5 == 0)
+printf("Buzz");
 else
-{
-printf("%d ", i);
-}
-strcpy(status, "");
+printf("%d", i);
+
+if (i != 100)
+printf(" ");
 i++;
 }
 printf("\n");
+
 return (0);
 }
