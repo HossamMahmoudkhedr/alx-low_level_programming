@@ -15,7 +15,7 @@ i = 1;
 
 while (i <= n && i > 0)
 {
-j = 0;
+j = 1;
 while (j < i)
 {
 putchar(' ');
