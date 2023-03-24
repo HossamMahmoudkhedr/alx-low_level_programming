@@ -4,7 +4,7 @@
 /**
  * more_numbers - prints the numbers from 0 to 14
  *
- * Return: void
+ * Return : void
  */
 
 void more_numbers(void)
@@ -19,7 +19,7 @@ while (j <= 14)
 {
 if (j >= 10)
 {
-    putchar((j / 10) + '0');
+putchar((j / 10) + '0');
 }
 putchar((j % 10) + '0');
 j++;
