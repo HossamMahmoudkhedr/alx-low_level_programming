@@ -11,6 +11,8 @@ void more_numbers(void)
 {
 int i=0;
 int j;
+int divi;
+int mod;
 
 while (i < 10)
 {
@@ -19,12 +21,14 @@ while (j <= 14)
 {
 if (j >= 10)
 {
-_putchar((j / 10) + '0');
+divi = j / 10;
+putchar(divi + '0');
 }
-_putchar((j % 10) + '0');
+mod = j % 10;
+putchar(mod + '0');
 j++;
 }
-_putchar('\n');
+putchar('\n');
 i++;
 }
 }
