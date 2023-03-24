@@ -3,7 +3,9 @@
 
 /**
  * print_triangle - print a triangle aligned right, using '#'
+ *
  * @size: Size of triangle
+ * Return: void
  */
 void print_triangle(int size)
 {
