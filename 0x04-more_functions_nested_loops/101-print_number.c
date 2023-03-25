@@ -17,7 +17,7 @@ num = n;
 if (num < 0)
 {
 num *= -1;
-_putchar('-');
+putchar('-');
 }
 
 /* count up */
@@ -35,12 +35,12 @@ while (num >= 0)
 {
 if (m == 1)
 {
-_putchar(num % 10 + '0');
+putchar(num % 10 + '0');
 num = -1;
 }
 else
 {
-_putchar((num / m % 10) + '0');
+putchar((num / m % 10) + '0');
 m /= 10;
 }
 }
