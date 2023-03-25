@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "main.h"
 
 /**
@@ -16,12 +15,12 @@ int j = 0;
 if (n < 0)
 {
 n *= -1;
-putchar('-');
+_putchar('-');
 }
 
 if (n == 0)
 {
-putchar(n + '0');
+_putchar(n + '0');
 }
 if (n > 0)
 {
@@ -35,7 +34,7 @@ i++;
 
 for (j = i - 1; j >= 0; j--)
 {
-putchar(digits[j] + '0');
+_putchar(digits[j] + '0');
 }
 }
 }
