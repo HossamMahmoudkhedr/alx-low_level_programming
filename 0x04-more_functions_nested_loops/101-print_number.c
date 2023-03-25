@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
  * print_number - Function that prints an integer.
