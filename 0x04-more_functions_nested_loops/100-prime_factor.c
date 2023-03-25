@@ -1,54 +1,25 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <math.h>
 
 /**
- * bool - check if the number is prime or not
- * main - prints the factors of 612852475143
- *
- * @num: the number to be checked
- * Return: true if the number prime and false otherwise
+ * main - main block
+ * Description: Find and print the largest prime factor of the number
+ * 612852475143
  * Return: 0
  */
-bool is_prime(long long int num)
+int main(void)
 {
-if (num < 2)
-{
-return false;
-}
-for (long long int i = 2; i * i <= num; i++)
-{
-if (num % i == 0)
-{
-return false;
-}
-}
-return true;
-}
+int c;
+long num = 612852475143;
 
-int main()
+for (c = (int)sqrt(num); c > 2; c++)
 {
-long long int n = 612852475143;
-long long int i = 2;
-
-while (i <= n)
+if (num % c == 0)
 {
-if (is_prime(i))
-{
-if (n % i == 0)
-{
-printf("%lld ", i);
-n = n / i;
-}
-else
-{
-i++;
-}
-}
-else
-{
-i++;
+printf("%d\n", c);
+break;
 }
 }
 
-return 0;
+return (0);
 }
