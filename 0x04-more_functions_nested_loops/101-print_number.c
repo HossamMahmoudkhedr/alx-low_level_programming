@@ -1,39 +1,46 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_number - Function that prints an integer.
  * @n: int type number
  * Description: Can only use _putchar to print.
  */
-
 void print_number(int n)
 {
-int digits[100];
-int i = 0;
-int j = 0;
-if (n < 0)
+long m;   /* power of 10 */
+int c;    /* boolean check */
+long num; /* convert int to long */
+
+num = n;
+/* negatives */
+if (num < 0)
 {
-n *= -1;
+num *= -1;
 _putchar('-');
 }
 
-if (n == 0)
+/* count up */
+m = 1;
+c = 1;
+while (c)
 {
-_putchar(n + '0');
-}
-if (n > 0)
-{
-while (n > 0)
-{
-digits[i] = n % 10;
-n /= 10;
-i++;
+if (num / (m * 10) > 0)
+m *= 10;
+else
+c = 0;
 }
 
-for (j = i - 1; j >= 0; j--)
+while (num >= 0)
 {
-_putchar(digits[j] + '0');
+if (m == 1)
+{
+_putchar(num % 10 + '0');
+num = -1;
+}
+else
+{
+_putchar((num / m % 10) + '0');
+m /= 10;
 }
 }
 }
