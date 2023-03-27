@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 #include "2-strlen.c"
+
+int _putchar(char c);
 /**
  * print_rev - prints a string, in reverse, followed by a new line
  *
@@ -16,8 +18,8 @@ i = length - 1;
 
 while (i >= 0 && i < length)
 {
-putchar(s[i]);
+_putchar(s[i]);
 i--;
 }
-putchar('\n');
+_putchar('\n');
 }
