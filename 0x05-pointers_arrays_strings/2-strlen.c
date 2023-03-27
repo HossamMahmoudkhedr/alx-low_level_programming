@@ -12,7 +12,7 @@ int i;
 int c;
 i = 0;
 c = 0;
-while(s[i] != '\0')
+while (s[i] != '\0')
 {
 c++;
 i++;
