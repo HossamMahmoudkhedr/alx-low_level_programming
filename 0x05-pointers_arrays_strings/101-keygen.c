@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-char password[7];
+char password[84];
 int i;
 const char charset[] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 srand(time(NULL));
 
 i = 0;
-while(i < 6)
+while(i < 83)
 {
 password[i] = charset[rand() % sizeof(charset)];
 i++;
