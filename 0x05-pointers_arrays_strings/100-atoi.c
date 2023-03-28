@@ -7,7 +7,7 @@
  * Return: the integer
  */
 
-int atoi(const char *str)
+int _atoi(const char *str)
 {
 int num = 0, sign = 1;
 
