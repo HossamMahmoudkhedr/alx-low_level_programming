@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * convert a string to an integer
+ * _atoi - convert a string to an integer
  *
  * @s: the string to be converted
  * Return: the integer
@@ -31,6 +31,6 @@ while (isdigit(*s))
 result = result * 10 + (*s - '0');
 s++;
 }
-number = result * sign;
+number = result *sign;
 return (number);
 }
