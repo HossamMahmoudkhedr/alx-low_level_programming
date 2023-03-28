@@ -15,8 +15,8 @@ int j;
 int length;
 char tmp;
 j = 0;
-i = length - 1;
 length = strlen(s);
+i = length - 1;
 
 while (j < i + 1)
 {
