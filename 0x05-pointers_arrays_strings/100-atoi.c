@@ -6,31 +6,29 @@
  * @s: the string to be converted
  * Return: the integer
  */
-int _atoi(char *s)
-{
-int result = 0;
-int sign = 1;
-int number;
 
-while (isspace(*s))
+int atoi(const char *str)
 {
-s++;
-}
+int num = 0, sign = 1;
 
-if (*s == '+' || *s == '-')
+// Ignore leading white space
+while (*str == ' ')
 {
-if (*s == '-')
-{
-sign = -1;
-}
-s++;
+str++;
 }
 
-while (isdigit(*s))
+// Check for sign
+if (*str == '-' || *str == '+')
 {
-result = result * 10 + (*s - '0');
-s++;
+sign = (*str == '-') ? -1 : 1;
+str++;
 }
-number = result *sign;
-return (number);
+
+// Convert digits to integer
+while (isdigit(*str))
+{
+num = num * 10 + (*str++ - '0');
+}
+
+return (sign *num);
 }
