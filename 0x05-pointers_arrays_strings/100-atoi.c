@@ -10,15 +10,16 @@ int _atoi(char *s)
 {
 int result = 0;
 int sign = 1;
+int number;
 
 while (isspace(*s))
 {
 s++;
 }
 
-if(*s == '+' || *s == '-')
+if (*s == '+' || *s == '-')
 {
-if(*s == '-')
+if (*s == '-')
 {
 sign = -1;
 }
@@ -30,6 +31,6 @@ while (isdigit(*s))
 result = result * 10 + (*s - '0');
 s++;
 }
-
-return result * sign;
+number = result * sign;
+return (number);
 }
