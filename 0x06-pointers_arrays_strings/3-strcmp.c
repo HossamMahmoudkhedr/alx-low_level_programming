@@ -13,26 +13,19 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int i;
-int result;
-int max;
-i = 0;
-result = 0;
-max = strlen(s1);
-if (strlen(s2) > max)
+while (((*s1 != '\0') && (*s2 != '\0')) && (*s1 == *s2))
 {
-max = strlen(s2);
+s1++;
+s2++;
 }
 
-while (i < max)
+if (*s1 == *s2)
 {
-if (s1[i] != s2[i])
-{
-result = s1[i] - s2[i];
-break;
-}
-i++;
+return (0);
 }
 
-return (result);
+else
+{
+return (*s1 - *s2);
+}
 }
