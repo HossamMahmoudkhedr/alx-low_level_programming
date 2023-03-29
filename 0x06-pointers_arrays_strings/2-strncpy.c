@@ -2,12 +2,12 @@
 #include <string.h>
 
 /**
- *  *_strncpy -  copies a string (copies src to dest)
+ * _strncpy - Write a function that copies a string, with number of bytes
+ * @dest: This is the output dest
+ * @src: This is the input source
+ * @n: This is the number of bytes to copy
  *
- * @dest: the main string
- * @src: the string to be copied
- * @n: number of bytes that will be used from src
- * Return: the string (dest)
+ *Return: Copied string with the number of bytes
  */
 
 char *_strncpy(char *dest, char *src, int n)

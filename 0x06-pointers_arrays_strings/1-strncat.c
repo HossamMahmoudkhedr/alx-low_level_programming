@@ -2,12 +2,14 @@
 #include <string.h>
 
 /**
- * *_strncat - concatenates two strings and use at most n bytes from src
+ * _strncat - Write a function that concatenates two strings. it will use at
+ *            most n bytes from src
  *
- * @dest: the first string
- * @src: the second string which will be appended to the first one
- * @n: number of bytes that will be used from src
- * Return: the concatenated string (dest)
+ * @dest: This is the output  dest
+ * @src: This is the input src
+ * @n: This is the number bytes fro src
+ *
+ * Return: This is my return
  */
 
 char *_strncat(char *dest, char *src, int n)
