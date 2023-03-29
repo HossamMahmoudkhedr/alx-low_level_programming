@@ -2,15 +2,14 @@
 #include <string.h>
 
 /**
- * _strncat - Write a function that concatenates two strings
+ * _strncat - Concatenates two strings
  *
- * @dest: This is the output  dest
- * @src: This is the input src
- * @n: This is the number bytes fro src
+ * @dest: Pointer to destination string
+ * @src: Pointer to source string
+ * @n: Maximum number of bytes to be copied from src
  *
- * Return: This is my return
+ * Return: Pointer to resulting string dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 int i;
