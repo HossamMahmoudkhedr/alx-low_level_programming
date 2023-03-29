@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
- *_stract - concatenates two strings (appends the src string to the dest string)
+ *_strcat - concatenates two strings (appends the src string to the dest string)
  *
  * @dest: the first string
  * @src: the second string which will be appended to the first one
