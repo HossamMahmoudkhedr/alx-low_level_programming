@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * _strncpy - Write a function that copies a string, with number of bytes
@@ -13,19 +14,10 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
-int srcSize;
 
-i = 0;
-srcSize = strlen(src);
-
-while (i < n)
+for (i = 0; src[i] != '\0';i++)
 {
-if (src[i] == '\0')
-{
-break;
-}
 dest[i] = src[i];
-i++;
 }
 while (i < n)
 {
