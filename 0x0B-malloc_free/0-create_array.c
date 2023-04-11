@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of chars, and initializes it with a specific char
+ * create_array - creates an array of chars
  *
  * @size: the size of bytes needed to be allocated in memeory
  * @c: the character to allocated in the saved blocks
