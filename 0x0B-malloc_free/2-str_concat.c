@@ -27,7 +27,6 @@ while (s1[len1] != '\0')
 {
 len1++;
 }
-
 while (s2[len2] != '\0')
 {
 len2++;
@@ -36,22 +35,17 @@ newSize = len1 + len2;
 newStr = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 if (newStr == NULL)
 {
-return NULL;
+return (NULL);
 }
-
 for (i = 0; i < len1; i++)
 {
 newStr[i] = s1[i];
 }
-
 len2 = i;
-len1 = 0;
-
 for (j = len2; j < newSize; j++)
 {
 newStr[j] = s2[len1];
 len1++;
 }
-newStr[j] = '\0';
 return (newStr);
 }
