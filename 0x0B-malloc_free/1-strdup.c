@@ -9,32 +9,30 @@
  */
 char *_strdup(char *str)
 {
-int size;
-char *newStr;
-int i;
-size = 0;
-
-if (strcmp(str, "") == 0)
+int len, i;
+char *new_str;
+len = 0;
+if (str == NULL)
 {
-size += 1;
+return NULL;
 }
 
-if (size == 0)
+while (str[len] != '\0')
 {
-return (NULL);
-}
-else
-{
-for (i = 0; str[i] != '\0'; i++)
-{
-size++;
-}
-newStr = malloc(sizeof(char) * size);
+len++;
 }
 
-for (i = 0; i < size; i++)
+new_str = (char *)malloc(len + 1);
+
+if (new_str == NULL)
 {
-newStr[i] = str[i];
+return NULL;
 }
-return (newStr);
+
+for (i = 0; i <= len; i++)
+{
+new_str[i] = str[i];
+}
+
+return new_str;
 }
