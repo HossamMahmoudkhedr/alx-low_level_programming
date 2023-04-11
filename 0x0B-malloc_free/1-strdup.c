@@ -14,9 +14,9 @@ char *newStr;
 int i;
 size = 0;
 
-for (i = 0; str[i] != '\0'; i++)
+if (str == "")
 {
-size++;
+size += 1;
 }
 
 if (size == 0)
@@ -25,6 +25,10 @@ return (NULL);
 }
 else
 {
+for (i = 0; str[i] != '\0'; i++)
+{
+size++;
+}
 newStr = malloc(sizeof(char) * size);
 }
 
