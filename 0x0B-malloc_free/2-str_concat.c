@@ -47,5 +47,6 @@ for (j = len2; j < newSize; j++)
 newStr[j] = s2[len1];
 len1++;
 }
+newStr[j] = '\0';
 return (newStr);
 }
