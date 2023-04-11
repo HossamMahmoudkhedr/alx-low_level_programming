@@ -32,10 +32,11 @@ for (i = 0; i < len1; i++)
 newStr[i] = s1[i];
 }
 len2 = i;
+len1 = 0;
 for (j = len2; j < newSize;j++)
 {
-newStr[j] = *s2;
-*s2++;
+newStr[j] = s2[len1];
+len1++;
 }
 
 return (newStr);
