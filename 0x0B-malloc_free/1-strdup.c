@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * _strdup -  returns a pointer to a newly allocated space in memory
  *
@@ -14,7 +14,7 @@ char *newStr;
 int i;
 size = 0;
 
-if (str == "")
+if (strcmp(str, "") == 0)
 {
 size += 1;
 }
