@@ -30,5 +30,4 @@ ptr[j] = 0;
 }
 }
 
-return (ptr);
 }
