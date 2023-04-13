@@ -12,7 +12,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 int *ptr;
-int i, j;
+int c;
 
 if (nmemb == 0 || size == 0)
 {
@@ -24,8 +24,11 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-
-memset(ptr, 0, (nmemb * size));
+while (c < nmemb * size)
+{
+ptr[c] = 0;
+c++;
+}
 
 return (ptr);
 }
