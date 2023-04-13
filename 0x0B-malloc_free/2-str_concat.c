@@ -38,7 +38,6 @@ if (newStr == NULL)
 {
 return (NULL);
 }
-
 for (i = 0; i < len1; i++)
 {
 newStr[i] = s1[i];
