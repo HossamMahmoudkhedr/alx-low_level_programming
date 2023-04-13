@@ -16,13 +16,13 @@ int i, j;
 
 if (nmemb == 0 || size == 0)
 {
-return (NULL);
+exit(0)
 }
 
 ptr = (int *)malloc(nmemb * size);
 if (ptr == NULL)
 {
-return (NULL);
+exit(0)
 }
 
 for (i = 0; i < nmemb; i++)
@@ -33,5 +33,4 @@ ptr[i * size + j] = 0;
 }
 }
 
-return (ptr);
 }
