@@ -33,5 +33,5 @@ ptr[i * size + j] = 0;
 }
 }
 
-return ptr;
+return (ptr);
 }
