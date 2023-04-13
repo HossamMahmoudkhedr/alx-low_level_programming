@@ -16,21 +16,16 @@ int i, j;
 
 if (nmemb == 0 || size == 0)
 {
-exit(0)
+return (NULL);
 }
 
 ptr = (int *)malloc(nmemb * size);
 if (ptr == NULL)
 {
-exit(0)
+return (NULL);
 }
 
-for (i = 0; i < nmemb; i++)
-{
-for (j = 0; j < size; j++)
-{
-ptr[i * size + j] = 0;
-}
-}
+memset(ptr, 0, total_size);
 
+return (ptr);
 }
