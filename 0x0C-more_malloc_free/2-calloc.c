@@ -25,6 +25,7 @@ if (ptr == NULL)
 {
 return (NULL);
 }
+c = 0;
 while (c < totalSize)
 {
 ptr[c] = 0;
