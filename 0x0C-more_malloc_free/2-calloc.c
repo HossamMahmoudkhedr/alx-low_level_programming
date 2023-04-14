@@ -20,7 +20,7 @@ return (NULL);
 }
 
 totalSize = nmemb * size;
-ptr = (int *)malloc(totalSize);
+ptr = malloc(totalSize);
 if (ptr == NULL)
 {
 return (NULL);
