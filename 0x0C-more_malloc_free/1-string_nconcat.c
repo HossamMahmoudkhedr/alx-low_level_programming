@@ -33,7 +33,7 @@ n = len2;
 result = malloc(len1 + n + 1);
 if (result == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 memcpy(result, s1, len1);
