@@ -19,7 +19,7 @@ printf("Error\n");
 else
 {
 mul = atoi(argv[1]) * atoi(argv[2]);
-printf("%d", mul);
+printf("%d\n", mul);
 }
 return (0);
 }
