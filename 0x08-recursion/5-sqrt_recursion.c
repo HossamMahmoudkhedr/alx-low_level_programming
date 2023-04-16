@@ -9,15 +9,15 @@
  */
 int sqrtValue(int n, int c)
 {
-    if (c * c == n)
-    {
-        return (c);
-    }
-    else if (c * c > n)
-    {
-        return (-1);
-    }
-    return (sqrtValue(n, c + 1));
+if (c * c == n)
+{
+return (c);
+}
+else if (c * c > n)
+{
+return (-1);
+}
+return (sqrtValue(n, c + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of n
@@ -28,5 +28,5 @@ int sqrtValue(int n, int c)
  */
 int _sqrt_recursion(int n)
 {
-    return (sqrtValue(n, 1));
+return (sqrtValue(n, 1));
 }
