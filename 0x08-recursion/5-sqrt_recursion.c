@@ -17,7 +17,7 @@ int sqrtValue(int n, int c)
     {
         return (-1);
     }
-    return (sqrt(n, c + 1));
+    return (sqrtValue(n, c + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of n
