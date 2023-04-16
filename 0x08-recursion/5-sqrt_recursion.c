@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * sqrt - Makes possible to evaluate from 1 to n
+ * sqrtValue - Makes possible to evaluate from 1 to n
  * @a: same number as n
  * @c: number that iterates from 1 to n
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int sqrt(int n, int c)
+int sqrtValue(int n, int c)
 {
     if (c * c == n)
     {
@@ -28,5 +28,5 @@ int sqrt(int n, int c)
  */
 int _sqrt_recursion(int n)
 {
-    return (sqrt(n, 1));
+    return (sqrtValue(n, 1));
 }
