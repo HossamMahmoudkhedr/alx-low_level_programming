@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * sqrtValue - Makes possible to evaluate from 1 to n
- * @a: same number as n
+ * @n: same number as n
  * @c: number that iterates from 1 to n
  *
  * Return: On success 1.
