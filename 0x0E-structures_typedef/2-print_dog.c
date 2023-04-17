@@ -8,11 +8,7 @@
  */
 void print_dog(struct dog *d)
 {
-if (d == 0)
-{
-printf("\n");
-}
-else
+if (d != 0)
 {
 if (d->name == 0)
 {
