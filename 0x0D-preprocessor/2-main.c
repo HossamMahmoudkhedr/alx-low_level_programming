@@ -1,8 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#define FILENAME 0
-int main(int argc, char* argv[])
+
+/**
+ * main - prints the name of the file it was compiled from
+ *
+ * Return: Always 0 (success)
+ */
+
+int main(void)
 {
-    printf("%s", argv[FILENAME]);
-    return (0);
+printf("%s\n", __FILE__);
+return (0);
 }
