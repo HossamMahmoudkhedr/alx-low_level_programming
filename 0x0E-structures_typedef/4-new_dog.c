@@ -20,22 +20,21 @@ if (newDog == NULL)
 {
 return (NULL);
 }
-newDog->name = strdup(name);
-newDog->owner = strdup(owner);
-
-newDog->name = name;
+newDog->name = (char *)malloc(strlen(name) + 1);
+if (newDog->name == NULL)
+{
+free(newDog); 
+return (NULL);
+}
+strcpy(newDog->name, name);
 newDog->age = age;
-newDog->owner = owner;
-if (newDog->name == 0)
+newDog->owner = (char *)malloc(strlen(owner) + 1);
+if (newDog->owner == NULL)
 {
+free(newDog->name); 
 free(newDog);
-return (0);
+return (NULL);
 }
-if (newDog->owner == 0)
-{
-free(newDog);
-free(newDog->name);
-return (0);
-}
+strcpy(newDog->owner, owner);
 return (newDog);
 }
