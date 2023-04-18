@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -19,6 +20,8 @@ if (newDog == NULL)
 {
 return (NULL);
 }
+new_dog->name = _strdup(name);
+new_dog->owner = _strdup(owner);
 newDog->name = name;
 newDog->age = age;
 newDog->owner = owner;
