@@ -20,8 +20,9 @@ if (newDog == NULL)
 {
 return (NULL);
 }
-new_dog->name = _strdup(name);
-new_dog->owner = _strdup(owner);
+new_dog->name = strdup(name);
+new_dog->owner = strdup(owner);
+
 newDog->name = name;
 newDog->age = age;
 newDog->owner = owner;
