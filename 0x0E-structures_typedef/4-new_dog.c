@@ -26,6 +26,16 @@ newDog->owner = strdup(owner);
 newDog->name = name;
 newDog->age = age;
 newDog->owner = owner;
-
+if (newDog->name == 0)
+{
+free(newDog);
+return (0);
+}
+if (newDog->owner == 0)
+{
+free(newDog);
+free(newDog->name);
+return (0);
+}
 return (newDog);
 }
