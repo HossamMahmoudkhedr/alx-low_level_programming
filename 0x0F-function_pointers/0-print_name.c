@@ -1,15 +1,5 @@
 #include <stdio.h>
-/**
- * print - prints the name passed to it
- *
- * @c: the name to be printed
- * Return: void
- */
-void print(char *c)
-{
-printf("%s", c);
-}
-
+#include "function_pointers.h"
 /**
  * print_name - prints a name using print function
  *
@@ -19,6 +9,5 @@ printf("%s", c);
  */
 void print_name(char *name, void (*f)(char *))
 {
-f = print;
 f(name);
 }
