@@ -31,5 +31,6 @@ else
 printf("%d\n", value);
 }
 }
+printf("\n");
 va_end(arg);
 }
