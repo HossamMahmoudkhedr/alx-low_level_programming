@@ -24,7 +24,11 @@ for (i = 0; i < n; i++)
 value = va_arg(arg, int);
 if (separator != NULL)
 {
-printf("%d%s\n", value, separator);
+if(i == n - 1){
+printf("%d", value);
+}
+else
+printf("%d%s", value, separator);
 }
 else
 {
