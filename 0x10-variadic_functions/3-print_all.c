@@ -34,14 +34,11 @@ printf("%f", f);
 break;
 case 's':
 str = va_arg(arg, char *);
-if (str)
+if (str == NULL)
 {
+str = "(nil)";
+}
 printf("%s", str);
-}
-else
-{
-printf("(nil)");
-}
 break;
 default:
 continue;
