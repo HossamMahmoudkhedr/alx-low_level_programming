@@ -23,8 +23,7 @@ while (format && format[i])
 switch (format[i++])
 {
 case 'c':
-c = va_arg(arg, int);
-printf("%c", c);
+printf("%c", va_arg(arg, int););
 break;
 case 'i':
 printf("%d", va_arg(arg, int));
