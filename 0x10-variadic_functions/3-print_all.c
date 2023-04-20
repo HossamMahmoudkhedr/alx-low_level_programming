@@ -12,7 +12,6 @@
 
 void print_all(const char *const format, ...)
 {
-char c;
 int i;
 double f;
 char *str;
@@ -24,8 +23,7 @@ while (format && format[i])
 switch (format[i++])
 {
 case 'c':
-c = va_arg(arg, int);
-printf("%c", c);
+printf("%c", va_arg(arg, int));
 break;
 case 'i':
 i = va_arg(arg, int);
