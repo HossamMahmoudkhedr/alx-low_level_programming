@@ -24,7 +24,7 @@ for (i = 0; i < n; i++)
 value = va_arg(arg, int);
 if (separator != NULL)
 {
-if(i == n - 1){
+if (i == n - 1){
 printf("%d", value);
 }
 else
