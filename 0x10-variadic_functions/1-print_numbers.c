@@ -32,7 +32,7 @@ printf("%d%s", value, separator);
 }
 else
 {
-printf("%d\n", value);
+printf("%d", value);
 }
 }
 printf("\n");
