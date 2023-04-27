@@ -32,6 +32,6 @@ i++;
 
 newNode->len = length;
 *head = newNode;
-newNode->next = NULL
+newNode->next = NULL;
 return (*head);
 }
