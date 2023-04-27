@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node at the beginning of a list_t list
+ * add_node_end - adds a new node at the beginning of a list_t list
  *
  * @head: the head of the linked list
  * @str: the string to be stored in the node's value
@@ -22,7 +22,7 @@ return (NULL);
 }
 length = 0;
 newNode->str = strdup(str);
-newNode->next = NULL;
+newNode->next = *head;
 i = 0;
 while (str[i] != '\0')
 {
@@ -32,5 +32,6 @@ i++;
 
 newNode->len = length;
 *head = newNode;
+newNode->next = NULL
 return (*head);
 }
