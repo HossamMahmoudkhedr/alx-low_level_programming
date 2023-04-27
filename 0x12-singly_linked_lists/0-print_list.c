@@ -17,22 +17,32 @@ while (h != NULL)
 {
 if (h->str != NULL)
 {
-
+putchar('[');
+putchar(h->len + '0');
+putchar(']');
+putchar(' ');
 for (i = 0; i < h->len; i++)
 {
 putchar(h->str[i]);
 }
-length++;
+putchar('\n');
 }
 else
 {
+putchar('[');
+putchar('0');
+putchar(']');
+putchar(' ');
 putchar('(');
 putchar('n');
 putchar('i');
 putchar('l');
 putchar(')');
+putchar('\n');
 }
+length++;
 h = h->next;
 }
+putchar('\n');
 return (length);
 }
