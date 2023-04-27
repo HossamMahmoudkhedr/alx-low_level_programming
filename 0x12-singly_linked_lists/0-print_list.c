@@ -9,23 +9,17 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t length;
+size_t nelem;
 
-length = 0;
+nelem = 0;
 while (h != NULL)
 {
-if (h->str != NULL)
-{
-printf("[%i] %s", h->len, h->str);
-}
+if (h->str == NULL)
+printf("[%d] %s\n", 0, "(nil)");
 else
-{
-printf("[0] (nil)");
-}
-length++;
+printf("[%d] %s\n", h->len, h->str);
 h = h->next;
-putchar('\n');
+nelem++;
 }
-
-return (length);
+return (nelem);
 }
