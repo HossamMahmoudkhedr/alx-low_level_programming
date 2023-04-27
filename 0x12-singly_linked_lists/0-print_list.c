@@ -2,15 +2,15 @@
 #include "lists.h"
 
 /**
- * print_list - prints all the linked list valuse
+ * print_list - Prints all the linked list values.
+ * @h: The head pointer to the first node.
  *
- * @h: the head pointer to the first node
- * Return: number of nodes
+ * Return: Number of nodes.
  */
-
 size_t print_list(const list_t *h)
 {
 size_t length;
+
 length = 0;
 while (h != NULL)
 {
@@ -26,5 +26,6 @@ length++;
 h = h->next;
 putchar('\n');
 }
+
 return (length);
 }
