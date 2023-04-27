@@ -1,7 +1,5 @@
 #ifndef SINGLY_LINKED_LISTS
 #define SINGLY_LINKED_LISTS
-
-
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
