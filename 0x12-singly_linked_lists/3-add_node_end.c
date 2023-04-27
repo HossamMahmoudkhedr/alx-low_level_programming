@@ -21,14 +21,14 @@ if (newNode == NULL)
 return (NULL);
 }
 i = 0;
+length = 0;
+newNode->str = strdup(str);
+newNode->next = NULL;
 while (str[i] != '\0')
 {
 length++;
 i++;
 }
-length = 0;
-newNode->str = strdup(str);
-newNode->next = NULL;
 newNode->len = length;
 temp = *head;
 
