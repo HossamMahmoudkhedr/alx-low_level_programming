@@ -39,7 +39,7 @@ listint_t *newNode;
 len = listint_len(*head);
 len_ui = (unsigned int)len;
 
-if (idx >= len_ui)
+if (idx > len_ui)
 {
 return (NULL);
 }
@@ -48,12 +48,20 @@ if (newNode == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < len_ui - 1; i++)
+for (i = 0; i < idx - 1; i++)
 {
 (*head) = (*head)->next;
 }
 
+if (idx == len_ui - 1)
+{
+newNode->next = NULL;
+}
+else
+{
 newNode->next = (*head)->next;
+}
+
 *head = newNode;
 newNode->n = n;
 return (newNode);
