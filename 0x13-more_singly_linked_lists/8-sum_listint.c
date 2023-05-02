@@ -36,7 +36,7 @@ return (0);
 }
 sum = 0;
 len = listint_len(head);
-for (i = 0; i < len;i++)
+for (i = 0; i < len; i++)
 {
 sum += head->n;
 head = head->next;
