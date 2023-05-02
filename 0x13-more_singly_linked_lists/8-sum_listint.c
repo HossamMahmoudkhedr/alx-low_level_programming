@@ -18,10 +18,8 @@ while (h != NULL)
 length++;
 h = h->next;
 }
-
 return (length);
 }
-
 /**
 * sum_listint - returns the sum of all the data (n) of a listint_t linked list
 *
@@ -32,12 +30,10 @@ int sum_listint(listint_t *head)
 {
 size_t len, i;
 int sum;
-
-if(head == NULL)
+if (head == NULL)
 {
 return (0);
 }
-
 sum = 0;
 len = listint_len(head);
 for (i = 0; i < len;i++)
@@ -45,6 +41,5 @@ for (i = 0; i < len;i++)
 sum += head->n;
 head = head->next;
 }
-
 return (sum);
 }
