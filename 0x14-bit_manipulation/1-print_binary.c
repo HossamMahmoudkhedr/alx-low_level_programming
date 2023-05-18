@@ -20,7 +20,7 @@ bit = bit >> 1;
 
 if (bit == 0)
 {
-write(1, &c, 1);
+write(1, &character, 1);
 }
 
 while (bit)
