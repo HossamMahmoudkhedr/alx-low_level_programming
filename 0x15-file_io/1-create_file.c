@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include "main.h"
 
 /**
  * create_file - Create a file object
@@ -35,7 +36,7 @@ for (len = 0, ptr = text_content; *ptr; ptr++)
 {
 len++;
 }
-length = write(file, text_content, inlen);
+length = write(file, text_content, len);
 }
 
 if (close(file) == -1 || len != length)
