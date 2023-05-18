@@ -16,7 +16,7 @@ if (b == NULL)
 return (0);
 }
 
-for (n = 0; *b != 0; b++)
+for (number = 0; *b != 0; b++)
 {
 if (*b == '0')
 {
