@@ -64,12 +64,6 @@ return (98);
  *
  * @ac: number of arg
  * @av: list of args
- *
- * Return: 97 if incorrect num of args
- * 98 if file_from does not exist or unreadable
- * 99 if write fails
- * 100 if file close fails
- * 0 otherwise
  */
 int main(int ac, char *av[])
 {
