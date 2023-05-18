@@ -2,7 +2,7 @@
 #include <limits.h>
 
 /**
- * print_binary - 
+ * print_binary - prints the binary representation of a number
  *
  * @n: the number
  * Return: void
@@ -36,5 +36,4 @@ character = '0';
 write(1, &character, 1);
 bit = bit >> 1;
 }
-
 }
