@@ -8,7 +8,7 @@
  *
  * @filename: the file name
  * @letters: number of characters to read
- * Return: number of letter read, 0 if it is the end of the file
+ * Return: number of letter read or 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -22,7 +22,7 @@ if (filename == NULL || letters == 0)
 return (0);
 }
 
-buffer = malloc(sizeof(char) * (letters));
+buffer = malloc(sizeof(char) * letters);
 
 if (buffer == NULL)
 {
