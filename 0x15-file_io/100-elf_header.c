@@ -3,60 +3,77 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <elf.h>
+#include "main.h"
 /**
- * printclass - prints the class from an elf header
+ * print_class - prints the class from an elf header
  *
  * @head: header information
  *
  * Return: void
  */
-void printclass(char *head)
+void print_class(char *head)
 {
 printf("  %-35s", "Class:");
 if (head[4] == 2)
+{
 printf("ELF64\n");
+}
 else if (head[4] == 1)
+{
 printf("ELF32\n");
+}
 else
+{
 printf("<unknown: %02hx>", head[4]);
+}
 }
 
 /**
- * printdata - prints the information about data organization
- * from the elf header
- *
- * @head: header information
- *
- * Return: void
- */
-void printdata(char *head)
+* print_data - prints the information about data organization
+* from the elf header
+*
+* @head: header information
+*
+* Return: void
+*/
+void print_data(char *head)
 {
 printf("  %-35s", "Data:");
 if (head[5] == 1)
+{
 printf("2's complement, little endian\n");
+}
 else if (head[5] == 2)
+{
 printf("2's complement, big endian\n");
+}
 else
+{
 printf("<unknown: %02hx>", head[5]);
+}
 }
 
 /**
- * printversion - prints version info from elf header
- *
- * @head: header information
- *
- * Return: void
- */
-void printversion(char *head)
+* print_version - prints version info from elf header
+*
+* @head: header information
+*
+* Return: void
+*/
+void print_version(char *head)
 {
 printf("  %-35s", "Version:");
 if (head[6] <= EV_CURRENT)
 {
 printf("%d", head[6]);
 if (head[6] == EV_CURRENT)
+{
 printf(" (current)\n");
+}
 else
+{
 printf("\n");
+}
 }
 else
 {
@@ -65,13 +82,13 @@ printf("49 <unknown %%lx>");
 }
 
 /**
- * printabi - prints abi version from header information
- *
- * @head: header information
- *
- * Return: void
- */
-void printabi(char *head)
+* print_abi - prints abi version from header information
+*
+* @head: header information
+*
+* Return: void
+*/
+void print_abi(char *head)
 {
 printf("  %-35s", "OS/ABI:");
 if (head[7] == 0)
@@ -114,13 +131,13 @@ printf("  %-35s%d\n", "ABI Version:", head[8]);
 }
 
 /**
- * printtype - prints elf filetype from header info
- *
- * @head: header information
- *
- * Return: void
- */
-void printtype(char *head)
+* print_type - prints elf filetype from header info
+*
+* @head: header information
+*
+* Return: void
+*/
+void print_type(char *head)
 {
 int index;
 
@@ -142,13 +159,13 @@ printf("<unknown>: %02x%02x\n", head[16], head[17]);
 }
 
 /**
- * printentry - prints entry address of executable from header
- *
- * @head: header information
- *
- * Return: void
- */
-void printentry(char *head)
+* print_entry - prints entry address of executable from header
+*
+* @head: header information
+*
+* Return: void
+*/
+void print_entry(char *head)
 {
 int i, end;
 
@@ -217,11 +234,11 @@ printf("ELF Header:\n  Magic:   ");
 for (i = 0; i < 16; i++)
 printf("%02x ", (unsigned int) head[i]);
 printf("\n");
-printclass(head);
-printdata(head);
-printversion(head);
-printabi(head);
-printtype(head);
-printentry(head);
+print_class(head);
+print_data(head);
+print_version(head);
+print_abi(head);
+print_type(head);
+print_entry(head);
 return (0);
 }
