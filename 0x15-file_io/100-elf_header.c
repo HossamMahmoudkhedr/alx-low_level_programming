@@ -245,7 +245,7 @@ printf("%#lx\n", e_entry);
 }
 
 /**
-* closeelf - Closes an ELF file.
+* close_elf - Closes an ELF file.
 * @elf: The file descriptor of the ELF file.
 *
 * Description: If the file cannot be closed - exit code 98.
@@ -310,6 +310,6 @@ printtype(header->e_type, header->e_ident);
 printentry(header->e_entry, header->e_ident);
 
 free(header);
-close_elf(o);
+closeelf(o);
 return (0);
 }
