@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -c -fPIC *.c
-gcc -shared *.o -o libdynamic.so
+gcc *.c -c -fPIC
+gcc *.o -shared -o liball.so
