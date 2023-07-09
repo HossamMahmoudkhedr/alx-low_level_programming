@@ -20,7 +20,7 @@ return (NULL);
 }
 item->key = (char *)malloc(strlen(key) + 1);
 item->value = (char *)malloc(strlen(value) + 1);
-if (key == "")
+if (strlen(key) == 0)
 {
 return (NULL);
 }
