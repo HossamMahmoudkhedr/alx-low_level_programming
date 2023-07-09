@@ -20,6 +20,10 @@ return (NULL);
 }
 item->key = (char *)malloc(strlen(key) + 1);
 item->value = (char *)malloc(strlen(value) + 1);
+if (key == "")
+{
+return (NULL);
+}
 strcpy((char *)item->key, key);
 strcpy((char *)item->value, value);
 
