@@ -36,5 +36,10 @@ return (0);
 ht->array[index] = item;
 return (1);
 }
+else
+{
+ht->array[index]->next = item;
+return (1);
+}
 return (0);
 }
