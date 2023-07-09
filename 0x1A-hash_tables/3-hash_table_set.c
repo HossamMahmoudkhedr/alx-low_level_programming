@@ -54,7 +54,7 @@ return (1);
 }
 else
 {
-ht->array[index]->next = item;
+ht->array[0] = item;
 return (1);
 }
 return (0);
