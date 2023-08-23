@@ -8,7 +8,8 @@ RM = rm
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)
 oclean:
 	$(RM) $(OBJ)
 fclean: clean oclean
